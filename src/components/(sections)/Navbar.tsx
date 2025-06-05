@@ -1,6 +1,6 @@
 import Image from "next/image";
 import logo from "@/assets/images/logo.svg";
-import { Button } from "@/components/Button";
+import { Button } from "@/components/ui/Button";
 import Link from "next/link";
 const navLinks = [
   { label: "Home", href: "#" },
@@ -20,8 +20,8 @@ const navLinks = [
 export function Navbar() {
   return (
     <section className="py-4 lg:py-8 flex justify-center">
-      <div className="container max-w-5xl">
-        <div className="flex justify-between border border-white/15 rounded-full items-center p-2 px-4 md:pr-2">
+      <div className="container max-w-5xl lg:fixed z-50">
+        <div className="flex justify-between border border-white/15 rounded-full items-center p-2 px-4 md:pr-2 bg-neutral-950/10 backdrop-blur-md shadow-md shadow-neutral-950/50">
           <div>
             <Image
               alt="logo"

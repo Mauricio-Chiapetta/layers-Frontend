@@ -15,8 +15,12 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Layers | Home",
   description: "Layers Sass idea landing page",
-  authors:[{name:"Mauricio de Almeida Chiapetta",url:"https://www.mauricio-chiapetta.com.br"}],
-  
+  authors: [
+    {
+      name: "Mauricio de Almeida Chiapetta",
+      url: "https://www.mauricio-chiapetta.com.br",
+    },
+  ],
 };
 
 export default function RootLayout({
@@ -27,7 +31,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-neutral-950`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-neutral-950 text-white lg:px-0 px-2`}
       >
         {children}
       </body>
