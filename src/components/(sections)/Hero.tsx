@@ -60,7 +60,7 @@ export function Hero() {
             transition: { duration: 0.3 },
             opacity: 1,
           }}
-          whileTap={{ scale: 0.9, rotate: 5 }}
+          whileTap={{ scale: 0.9, rotate: 5}}
           animate={{ rotate: -5, x: [0, 100, 0] }}
           whileHover={{ translateX: -30 }}
         >

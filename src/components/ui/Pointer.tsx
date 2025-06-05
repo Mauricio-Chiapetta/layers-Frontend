@@ -1,8 +1,8 @@
-interface PointerProps{
-    Pathfill?:string;
-    fill?:string;
+interface PointerProps {
+  Pathfill?: string;
+  fill?: string;
 }
-export function Pointer(props:PointerProps) {
+export function Pointer(props: PointerProps) {
   return (
     <>
       <div>
@@ -12,7 +12,6 @@ export function Pointer(props:PointerProps) {
           viewBox="0 0 62 41"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          className="relative"
         >
           <path
             d="M10.8333 10.8333L15.8333 15.8333M2.5 2.5L8.39167 16.6417L10.4833 10.4833L16.6417 8.39167L2.5 2.5Z"
@@ -32,7 +31,7 @@ export function Pointer(props:PointerProps) {
         </svg>
       </div>
 
-      <div >
+      <div>
         <div></div>
       </div>
     </>
