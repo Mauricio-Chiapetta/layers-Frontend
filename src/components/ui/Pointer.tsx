@@ -37,4 +37,3 @@ export function Pointer(props: PointerProps) {
     </>
   );
 }
-// parei aqui

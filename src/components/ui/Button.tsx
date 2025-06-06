@@ -14,7 +14,7 @@ export function Button({
     primary:
       "border-white text-white hover:border-white/90 hover:bg-white duration-300 bg-transparent hover:text-neutral-950",
     secondary:
-      "bg-lime-400  border-lime-400 text-neutral-950 hover:bg-lime-400/80 hover:outline-2 duration-300",
+      "bg-lime-400 border-lime-400 text-neutral-950 hover:bg-lime-400/80  duration-300"
   };
 
   return (
