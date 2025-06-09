@@ -1,7 +1,7 @@
 @import "tailwindcss";
 ::selection {
-  background-color: #9ae600 ; /* Exemplo: amarelo (Tailwind yellow-400) */
-  color: #0a0a0a; /* Cor do texto selecionado */
+  background-color: #9ae600 ; 
+  color: #0a0a0a; 
 }
 
   html::-webkit-scrollbar {
