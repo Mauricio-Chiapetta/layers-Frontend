@@ -1,4 +1,5 @@
 import { Hero } from "@/components/(sections)/Hero";
+import { Introduction } from "@/components/(sections)/Introduction";
 import { LogoTicker } from "@/components/(sections)/LogoTicker";
 import { Navbar } from "@/components/(sections)/Navbar";
 import { ScrollLinked } from "@/components/ui/ScrollLinked";
@@ -9,6 +10,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <LogoTicker />
+      <Introduction/>
     </>
   );
 }

@@ -46,30 +46,44 @@ const iconsData = [
 
 export function LogoTicker() {
   return (
-    <div className=" flex overflow-hidden mt-9 before:content-[''] after:content-[''] before:absolute after:absolute before:h-full after:h-full before:w-5 after:w-20 relative after:right-0 before:left-0 before:top-0 after:top-0 before:bg-[linear-gradient(to_right,#0a0a0a,rgb(0,0,0,0))] after:bg-[linear-gradient(to_left,#0a0a0a,rgb(0,0,0,0))] before:z-10 hover:opacity-40 duration-300">
-      <motion.div
-        className="flex gap-20 flex-none pr-20 "
-        initial={{ translateX: 0 }}
-        animate={{ translateX: "-50%" }}
-        transition={{ duration: 15, ease: "linear", repeat: Infinity }}
+    <section className="lg:py-24 py-5 max-w-screen-lg mx-auto">
+      <motion.h3
+        className="text-center lg:text-xl text-md text-white/50 mb-8 font-medium"
+        initial={{ opacity: 0, translateY: 50 }}
+        whileInView={{
+          opacity: 1,
+          translateY: 0,
+          transition: { duration: 0.3, ease: "easeIn" },
+        }}
+        viewport={{ once: true }}
       >
-        {iconsData.map(({ src, alt }) => (
-          <Image
-            src={src}
-            alt={alt}
-            key={alt}
-            className="flex-none h-7 w-auto"
-          />
-        ))}
-        {iconsData.map(({ src, alt }) => (
-          <Image
-            src={src}
-            alt={alt}
-            key={alt}
-            className="flex-none h-7 w-auto"
-          />
-        ))}
-      </motion.div>
-    </div>
+        Already chosen by these market leaders
+      </motion.h3>
+      <div className="flex overflow-hidden mt-5 before:content-[''] after:content-[''] before:absolute after:absolute before:h-full after:h-full before:w-100 after:w-50  relative after:right-0 before:left-0 before:top-0 after:top-0 before:bg-[linear-gradient(to_right,#0a0a0a,rgb(0,0,0,0))] after:bg-[linear-gradient(to_left,#0a0a0a,rgb(0,0,0,0))] before:z-10">
+        <motion.div
+          className="flex lg:gap-20 gap-4 flex-none pr-20"
+          initial={{ translateX: 0 }}
+          animate={{ translateX: "-50%" }}
+          transition={{ duration: 30, ease: "linear", repeat: Infinity }}
+        >
+          {iconsData.map(({ src, alt }) => (
+            <Image
+              src={src}
+              alt={alt}
+              key={alt}
+              className="flex-none lg:h-10 h-5 w-auto hover:brightness-50 duration-300"
+            />
+          ))}
+          {iconsData.map(({ src, alt }) => (
+            <Image
+              src={src}
+              alt={alt}
+              key={alt}
+              className="flex-none lg:h-10 h-5 w-auto hover:brightness-50 duration-300"
+            />
+          ))}
+        </motion.div>
+      </div>
+    </section>
   );
 }

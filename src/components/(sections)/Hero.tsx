@@ -7,22 +7,17 @@ import { motion } from "motion/react";
 import { Pointer } from "../ui/Pointer";
 export function Hero() {
   return (
-    <section className="py-24 flex justify-center relative overflow-hidden h-screen">
+    <section className="py-24 flex justify-center relative overflow-hidden">
       <div className="container">
         <div className="flex justify-center ">
-          <div className="inline-flex py-1 px-3 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full text-neutral-950 font-semibold animate-pulse">
+          <div className="inline-flex py-1 px-3 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full text-neutral-950 font-semibold">
             ✨ $7.5M seed round raised
           </div>
           <motion.div
-            className="absolute top-35 right-90 cursor-pointer"
-            initial={{
-              opacity: 0,
-              scale: 0.1,
-              translateX: 500,
-              translateY: 600,
-            }}
-            animate={{ opacity: 1, scale: 1, translateX: 0, translateY: 0 }}
-            transition={{ duration: 0.3 }}
+            className="absolute top-35 lg:right-90 right-10 cursor-pointer"
+            initial={{ x: 200 }}
+            animate={{ x: [200, 350, 0] }}
+            transition={{ duration: 0.9 }}
             drag
             dragConstraints={{ left: -500, right: 50, top: -90, bottom: 100 }}
           >
@@ -30,14 +25,10 @@ export function Hero() {
           </motion.div>
 
           <motion.div
-            className="absolute top-90 left-100 cursor-pointer"
-            initial={{
-              opacity: 0,
-              scale: 0.1,
-              translateX: -500,
-            }}
-            animate={{ opacity: 1, scale: 1, translateX: 0, translateY: 0 }}
-            transition={{ duration: 0.3 }}
+            className="absolute top-90 lg:left-90 left-10 cursor-pointer"
+            initial={{ x: -200 }}
+            animate={{ x: [-200, -350, 0] }}
+            transition={{ duration: 0.9 }}
             drag
             dragConstraints={{ left: -50, right: 500, top: -90, bottom: 100 }}
           >
@@ -45,7 +36,7 @@ export function Hero() {
           </motion.div>
         </div>
         <motion.h1
-          className="text-6xl font-medium text-center mt-6 md:text-7xl"
+          className="text-6xl font-medium text-center mt-6 md:text-7xl bg-gradient-to-b from-lime-50 to-lime-500 text-transparent bg-clip-text hover:to-lime-50 duration-500 transition-colors"
           initial={{ opacity: 0, scale: 0.1 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.3 }}
