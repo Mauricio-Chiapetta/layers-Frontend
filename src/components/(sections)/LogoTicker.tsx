@@ -46,9 +46,9 @@ const iconsData = [
 
 export function LogoTicker() {
   return (
-    <section className="lg:py-24 py-5 max-w-screen-lg mx-auto">
+    <section className="lg:py-24 py-5 mx-auto container">
       <motion.h3
-        className="text-center lg:text-xl text-md text-white/50 mb-8 font-medium"
+        className="text-center lg:text-xl text-md text-white/50 mb-8"
         initial={{ opacity: 0, translateY: 50 }}
         whileInView={{
           opacity: 1,
