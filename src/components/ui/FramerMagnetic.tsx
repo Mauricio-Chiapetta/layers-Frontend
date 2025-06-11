@@ -2,7 +2,11 @@
 import { motion } from "motion/react";
 import { useRef, useState } from "react";
 
-export function FramerMagnetic({ children }: { children: React.ReactNode }) {
+type magneticTypes = {
+  children:React.ReactNode
+}
+
+export function FramerMagnetic({children}:magneticTypes) {
   const ref = useRef<HTMLDivElement>(null);
   const [position, setPosition] = useState({ x: 0, y: 0 });
 

@@ -37,8 +37,8 @@ export function Hero() {
         </div>
         <motion.h1
           className="text-6xl font-medium text-center mt-6 md:text-7xl bg-gradient-to-b from-lime-50 to-lime-500 text-transparent bg-clip-text hover:to-lime-50 duration-500 transition-colors"
-          initial={{ opacity: 0, scale: 0.1 }}
-          animate={{ opacity: 1, scale: 1 }}
+          initial={{ opacity: 0}}
+          animate={{ opacity: 1}}
           transition={{ duration: 0.3 }}
         >
           Impactful design,
@@ -46,8 +46,8 @@ export function Hero() {
         </motion.h1>
         <motion.p
           className="text-center text-xl text-white/50 mt-8"
-          initial={{ opacity: 0, scale: 0.1 }}
-          animate={{ opacity: 1, scale: 1 }}
+          initial={{ opacity: 0}}
+          animate={{ opacity: 1 }}
           transition={{ duration: 0.3 }}
         >
           Design tools shouldn&apos;t slow you down. Layers powerful
@@ -58,8 +58,8 @@ export function Hero() {
 
         <motion.form
           className="flex border border-white/15 rounded-full p-2 mt-8 max-w-lg mx-auto"
-          initial={{ opacity: 0, scale: 0.1 }}
-          animate={{ opacity: 1, scale: 1 }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
           transition={{ duration: 0.3 }}
         >
           <input

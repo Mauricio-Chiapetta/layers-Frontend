@@ -30,7 +30,7 @@ export function Introduction() {
         <div className="container">
           <div className="sticky top-25">
             <div className="flex justify-center">
-              <Tag>Introducign Layers</Tag>
+              <Tag variant="secondary">Introducign Layers</Tag>
             </div>
 
             <div className="text-center font-medium text-4xl md:text-6xl lg:text-7xl mt-8">
@@ -43,7 +43,7 @@ export function Introduction() {
                   >{`${text} `}</span>
                 ))}
               </span>
-              <span className="text-lime-400 block">
+              <span className="text-lime-400 block hover:text-lime-600 duration-200">
                 That&apos;s why we built Layers.
               </span>
             </div>

@@ -1,4 +1,5 @@
 import { motion} from "motion/react";
+import {Asterisk} from "lucide-react"
 type tagTypes = {
   children: React.ReactNode;
   text?: string;
@@ -26,7 +27,7 @@ export function Tag({ children, ...props }: tagTypes) {
         repeatDelay: 1,
       }}
       >
-        &#10058;
+        <Asterisk/>
       </motion.span>
       <span>{children}</span>
     </motion.div>
