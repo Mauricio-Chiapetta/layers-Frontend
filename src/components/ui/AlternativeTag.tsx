@@ -6,7 +6,7 @@ interface AlternativeTagProps {
 export function AlternativeTag({ item }: AlternativeTagProps) {
   return (
     <div
-      className="flex gap-3 items-center bg-neutral-900 px-4 py-3 rounded-lg border border-white/10 font-medium hover:bg-neutral-800 duration-200"
+      className="flex gap-3 items-center bg-neutral-900 px-4 py-3 rounded-3xl border border-white/10 font-medium hover:bg-neutral-800 duration-200"
       key={item}
     >
       <motion.span

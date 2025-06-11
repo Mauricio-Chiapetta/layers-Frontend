@@ -3,10 +3,13 @@ import { Tag } from "../ui/Tag";
 import { Card } from "../ui/Card";
 import { motion } from "motion/react";
 import { AlternativeTag } from "../ui/AlternativeTag";
+import { Avatar } from "../ui/Avatar";
+import { Key } from "../ui/Key";
 import avatar1 from "@/assets/images/avatar-ashwin-santiago.jpg";
 import avatar2 from "@/assets/images/avatar-florence-shaw.jpg";
 import avatar3 from "@/assets/images/avatar-lula-meyers.jpg";
 import avatar4 from "@/assets/images/avatar-owen-garcia.jpg";
+import Image from "next/image";
 
 export function Features() {
   const features = [
@@ -50,7 +53,47 @@ export function Features() {
             <Card
               paragraph="Work together seamlessly with conflict-free team editing"
               title="Real time collaboration"
-            ></Card>
+            >
+              {/* avatar div */}
+              <div className="aspect-video flex items-center justify-center">
+                <Avatar className="z-40">
+                  <Image
+                    src={avatar1}
+                    alt="avatar 1"
+                    className="rounded-full"
+                  />
+                </Avatar>
+
+                <Avatar className="-ml-6 border-indigo-500 z-30">
+                  <Image
+                    src={avatar2}
+                    alt="avatar 2"
+                    className="rounded-full"
+                  />
+                </Avatar>
+
+                <Avatar className="-ml-6 border-amber-500 z-20">
+                  <Image
+                    src={avatar3}
+                    alt="avatar 3"
+                    className="rounded-full"
+                  />
+                </Avatar>
+
+                <Avatar className="-ml-6 border-transparent z-10">
+                  <div className="size-full bg-neutral-700 rounded-full inline-flex items-center justify-center gap-1 relative">
+                    <Image src={avatar4} alt="avatar 4" className="size-full absolute rounded-full"/>
+                    {/*render 3 span tags*/}
+                    {Array.from({ length: 3 }).map((_, i) => (
+                      <span
+                        key={i}
+                        className="size-1.5 bg-white rounded-full inline-flex"
+                      ></span>
+                    ))}
+                  </div>
+                </Avatar>
+              </div>
+            </Card>
           </motion.div>
           {/* second feature */}
           <motion.div
@@ -60,7 +103,17 @@ export function Features() {
             <Card
               paragraph="Engage your clients with prototypes that react to user actions"
               title="Interactive Prototyping"
-            ></Card>
+            >
+              <div className="aspect-video flex items-center justify-center">
+                <p className="text-4xl font-extrabold text-white/20 text-center">
+                  We&apos;ve achieved{" "}
+                  <span className="bg-gradient-to-r from-purple-400 to-indigo-500 text-transparent bg-clip-text hover:from-indigo-500 hover:to-purple-400 duration-300 transition-colors">
+                    incredible
+                  </span>{" "}
+                  growth this year
+                </p>
+              </div>
+            </Card>
           </motion.div>
           {/* third feature */}
           <motion.div
@@ -70,7 +123,13 @@ export function Features() {
             <Card
               title="Keyboard Quick Actions"
               paragraph="Powerful commands to help you create designs more quickly"
-            ></Card>
+            >
+              <div className="aspect-video flex items-center justify-center gap-4">
+                <Key className="w-28">shift</Key>
+                <Key>alt</Key>
+                <Key>C</Key>
+              </div>
+            </Card>
           </motion.div>
         </div>
 
@@ -84,7 +143,7 @@ export function Features() {
           className="flex mt-12 justify-center gap-2 flex-wrap"
         >
           {features.map((item) => (
-            <AlternativeTag item={item} />
+            <AlternativeTag key={item} item={item} />
           ))}
         </motion.div>
       </div>
