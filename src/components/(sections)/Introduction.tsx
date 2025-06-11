@@ -26,11 +26,13 @@ export function Introduction() {
 
   return (
     <>
-      <section className="py-28 flex justify-center lg:py-40">
+      <section className="py-28 flex justify-center lg:py-40 relative">
         <div className="container">
+          {/* background blur effect */}
+          <div className="bg-neutral-300/5 w-90 h-100 absolute -z-50 blur-3xl top-150"></div>
           <div className="sticky top-25">
             <div className="flex justify-center">
-              <Tag variant="secondary">Introducign Layers</Tag>
+              <Tag>Introducign Layers</Tag>
             </div>
 
             <div className="text-center font-medium text-4xl md:text-6xl lg:text-7xl mt-8">
@@ -39,7 +41,7 @@ export function Introduction() {
                 {word.map((text, i) => (
                   <span
                     key={i}
-                    className={cn(i < currentWord && "text-lime-200 ")}
+                    className={cn(i < currentWord && "text-white")}
                   >{`${text} `}</span>
                 ))}
               </span>
@@ -48,6 +50,7 @@ export function Introduction() {
               </span>
             </div>
           </div>
+
           <div className="h-[150vh]" ref={targetRef}></div>
         </div>
       </section>

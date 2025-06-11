@@ -2,8 +2,12 @@
 import { Tag } from "../ui/Tag";
 import { Card } from "../ui/Card";
 import { motion } from "motion/react";
-import { Asterisk } from "lucide-react";
-import { FramerMagnetic } from "../ui/FramerMagnetic";
+import { AlternativeTag } from "../ui/AlternativeTag";
+import avatar1 from "@/assets/images/avatar-ashwin-santiago.jpg";
+import avatar2 from "@/assets/images/avatar-florence-shaw.jpg";
+import avatar3 from "@/assets/images/avatar-lula-meyers.jpg";
+import avatar4 from "@/assets/images/avatar-owen-garcia.jpg";
+
 export function Features() {
   const features = [
     "Asset Library",
@@ -37,7 +41,7 @@ export function Features() {
           </span>
         </motion.h2>
         {/* features */}
-        <div className="mt-12 grid lg:grid-cols-3 gap-5 grid-cols-1">
+        <div className="mt-12 grid lg:grid-cols-3 gap-8 grid-cols-1">
           {/* first feature */}
           <motion.div
             initial={{ translateY: 100 }}
@@ -80,23 +84,7 @@ export function Features() {
           className="flex mt-12 justify-center gap-2 flex-wrap"
         >
           {features.map((item) => (
-            <FramerMagnetic key={item}>
-              <div className="flex gap-1 items-center bg-neutral-900 px-5 py-3 rounded-lg border border-white/10 font-medium hover:bg-neutral-800 duration-200">
-                <motion.span
-                  animate={{ rotate: [0, 0, 360, 360, 0] }}
-                  transition={{
-                    duration: 2,
-                    ease: "easeInOut",
-                    times: [0, 0.2, 0.5, 0.8, 1],
-                    repeat: Infinity,
-                    repeatDelay: 1,
-                  }}
-                >
-                  <Asterisk className="bg-lime-400 text-black rounded-full" />
-                </motion.span>
-                <span>{item}</span>
-              </div>
-            </FramerMagnetic>
+            <AlternativeTag item={item} />
           ))}
         </motion.div>
       </div>
