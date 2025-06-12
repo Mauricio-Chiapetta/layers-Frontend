@@ -50,6 +50,7 @@ export function Features() {
           <motion.div
             initial={{ translateY: 100 }}
             whileInView={{ translateY: 0, transition: { duration: 0.3 } }}
+             viewport={{ once: true }}
           >
             <Card
               paragraph="Work together seamlessly with conflict-free team editing"
@@ -106,6 +107,7 @@ export function Features() {
           <motion.div
             initial={{ translateY: 200 }}
             whileInView={{ translateY: 0, transition: { duration: 0.6 } }}
+             viewport={{ once: true }}
           >
             <Card
               paragraph="Engage your clients with prototypes that react to user actions"
@@ -135,6 +137,7 @@ export function Features() {
           <motion.div
             initial={{ translateY: 200 }}
             whileInView={{ translateY: 0, transition: { duration: 0.9 } }}
+             viewport={{ once: true }}
           >
             <Card
               title="Keyboard Quick Actions"
@@ -161,8 +164,9 @@ export function Features() {
           whileInView={{
             opacity: 1,
             translateY: 0,
-            transition: { ease: "easeInOut", duration: 0.5 },
+            transition: { ease: "easeInOut", duration: 0.5 },           
           }}
+           viewport={{ once: true }}
           className="flex mt-12 justify-center gap-2 flex-wrap"
         >
           {features.map((item) => (

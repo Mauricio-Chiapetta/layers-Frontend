@@ -1,5 +1,6 @@
 import { Features } from "@/components/(sections)/Features";
 import { Hero } from "@/components/(sections)/Hero";
+import { Integrations } from "@/components/(sections)/Integrations";
 import { Introduction } from "@/components/(sections)/Introduction";
 import { LogoTicker } from "@/components/(sections)/LogoTicker";
 import { Navbar } from "@/components/(sections)/Navbar";
@@ -13,6 +14,7 @@ export default function Home() {
       <LogoTicker />
       <Introduction/>
       <Features/>
+      <Integrations/>
     </>
   );
 }
