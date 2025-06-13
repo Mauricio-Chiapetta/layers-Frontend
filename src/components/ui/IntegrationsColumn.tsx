@@ -59,7 +59,6 @@ export function IntegrationsColumn({
     <motion.div
       initial={{ y: reverse ? "-50%" : 0 }}
       animate={{ y: reverse ? 0 : "-50%" }}
-      whileHover={{ y: reverse ? "-50%" : 0 }}
       transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
       {...props}
       className={cn("flex flex-col gap-4 pb-4", className)}
