@@ -11,6 +11,7 @@ import avatar3 from "@/assets/images/avatar-lula-meyers.jpg";
 import avatar4 from "@/assets/images/avatar-owen-garcia.jpg";
 import Image from "next/image";
 import { FramerMagnetic } from "../ui/FramerMagnetic";
+import { Span } from "../ui/Span";
 
 export function Features() {
   const features = [
@@ -40,9 +41,7 @@ export function Features() {
           className="text-6xl text-center font-medium mt-6"
         >
           Where power meets <br />
-          <span className="text-lime-400 hover:text-lime-600 duration-200">
-            simplicity
-          </span>
+          <Span>simplicity</Span>
         </motion.h2>
         {/* features */}
         <div className="mt-12 grid lg:grid-cols-3 gap-8 grid-cols-1">

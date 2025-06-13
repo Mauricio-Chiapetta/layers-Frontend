@@ -1,6 +1,7 @@
 import Image from "next/image";
 import logo from "@/assets/images/logo.svg";
 import { Button } from "@/components/ui/Button";
+import {Menu , X} from "lucide-react"
 import Link from "next/link";
 const navLinks = [
   { label: "Home", href: "#" },
@@ -43,7 +44,7 @@ export function Navbar() {
             </nav>
           </div>
           <div className="flex justify-end gap-4">
-            <svg
+            {/* <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"
@@ -58,7 +59,8 @@ export function Navbar() {
               <line x1="3" y1="12" x2="21" y2="12"></line>
               <line x1="3" y1="6" x2="21" y2="6"></line>
               <line x1="3" y1="18" x2="21" y2="18"></line>
-            </svg>
+            </svg> */}
+            <Menu className="text-white md:hidden"/>
             <Button
               variant="primary"
               className="hidden md:inline-flex items-center"

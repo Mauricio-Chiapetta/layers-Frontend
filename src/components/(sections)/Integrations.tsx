@@ -3,6 +3,7 @@ import { IntegrationsColumn } from "../ui/IntegrationsColumn";
 import { Tag } from "../ui/Tag";
 import { integrations } from "../ui/IntegrationsColumn";
 import { motion } from "motion/react";
+import { Span } from "../ui/Span";
 
 export function Integrations() {
   return (
@@ -19,9 +20,7 @@ export function Integrations() {
             >
               <h2 className="text-6xl font-medium mt-6">
                 Plays well with{" "}
-                <span className="text-lime-400 hover:text-lime-500 transition-colors">
-                  others
-                </span>
+               <Span>others</Span>
               </h2>
               <p className="text-white/50 font-lg mt-4">
                 Layers seamlessly connects with your favorite tools, making it

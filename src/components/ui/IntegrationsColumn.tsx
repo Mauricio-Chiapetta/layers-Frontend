@@ -61,14 +61,17 @@ export function IntegrationsColumn({
       animate={{ y: reverse ? 0 : "-50%" }}
       transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
       {...props}
-      className={cn("flex flex-col gap-4 pb-4", className)}
+      className={cn(
+        "flex flex-col gap-4 pb-4 hover:opacity-[80%] transition-opacity",
+        className
+      )}
     >
       {Array.from({ length: 2 }).map((_, i) => (
         <Fragment key={i}>
           {integrations.map((item) => (
             <div
               key={item.name}
-              className="bg-neutral-900 p-6 border border-white/10 rounded-3xl"
+              className="bg-neutral-900 p-6 border border-white/10 rounded-3xl "
             >
               <div className="flex justify-center">
                 <Image

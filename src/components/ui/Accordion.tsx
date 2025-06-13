@@ -11,7 +11,7 @@ export function Accordion({ question, answer }: AccordionProps) {
   return (
     <div
       onClick={() => setisOpen(!isOpen)}
-      className="p-6 cursor-pointer bg-neutral-900 rounded-3xl border border-white/10"
+      className="p-6 cursor-pointer bg-neutral-900 rounded-3xl border border-white/10 hover:bg-neutral-900/70 transition-all duration-300"
     >
       <div className="text-center">
         <span className="text-lg font-bold transition flex justify-between gap-8">

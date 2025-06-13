@@ -1,5 +1,6 @@
 "use client";
 import { Accordion } from "../ui/Accordion";
+import { Span } from "../ui/Span";
 import { Tag } from "../ui/Tag";
 import { motion } from "motion/react";
 const items = [
@@ -43,9 +44,7 @@ export function Faqs() {
         >
           Questions? We&apos;ve
           <br /> got{" "}
-          <span className="text-lime-400 hover:text-lime-500 transition-colors ">
-            answers
-          </span>
+          <Span>answers</Span>
         </motion.h2>
         {/* faqs */}
         <div className="mt-12 flex flex-col gap-6">
@@ -58,6 +57,7 @@ export function Faqs() {
                 opacity: 1,
                 transition: { duration: 0.5, ease: "backInOut" },
               }}
+              viewport={{ once: true }}
             >
               <Accordion answer={item.answer} question={item.question} />
             </motion.div>

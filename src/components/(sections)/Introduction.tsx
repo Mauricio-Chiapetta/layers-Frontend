@@ -3,6 +3,7 @@ import { cn } from "@/lib/utils";
 import { useScroll, useTransform } from "motion/react";
 import { useRef, useEffect, useState } from "react";
 import { Tag } from "../ui/Tag";
+import { Span } from "../ui/Span";
 export function Introduction() {
   const text = `Your're racing to create exceptional work, but traditional design tools slow you down with unnecessary complexity and steep learning curves.`;
   const word = text.split(" ");
@@ -30,8 +31,8 @@ export function Introduction() {
         <div className="container">
           {/* background blur effect */}
           <div className="bg-neutral-300/5 w-90 h-100 absolute -z-50 blur-3xl top-150"></div>
-          <div className="sticky top-25">
-            <div className="flex justify-center">
+          <div className="sticky top-25 ">
+            <div className="flex justify-center ">
               <Tag>Introducign Layers</Tag>
             </div>
 
@@ -45,13 +46,11 @@ export function Introduction() {
                   >{`${text} `}</span>
                 ))}
               </span>
-              <span className="text-lime-400 block hover:text-lime-600 duration-200">
-                That&apos;s why we built Layers.
-              </span>
+              <Span className="bg-lime-400">That&apos;s why we built Layers.</Span>
             </div>
           </div>
 
-          <div className="h-[150vh]" ref={targetRef}></div>
+          <div className="h-[150vh]" ref={targetRef}></div> 
         </div>
       </section>
     </>
