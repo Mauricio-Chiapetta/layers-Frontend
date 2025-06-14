@@ -24,6 +24,8 @@ const navLinks = [
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   return (
+    <>
+    
     <header className="py-4 lg:py-8 flex justify-center">
       <div className="container max-w-5xl fixed z-50">
         <div className=" border border-white/15 rounded-[27px] bg-neutral-950/10 backdrop-blur-md shadow-md shadow-neutral-950/50">
@@ -129,5 +131,7 @@ export function Navbar() {
         </div>
       </div>
     </header>
+    <div className="pb-24 lg:pb-0"></div>
+    </>
   );
 }
