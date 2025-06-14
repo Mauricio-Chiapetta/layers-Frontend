@@ -108,7 +108,7 @@ export function Navbar() {
                 initial={{ opacity: 0, height: 0 }}
                 animate={{ opacity: 1, height: "auto" }}
                 exit={{ opacity: 0, height: 0 }}
-                transition={{ duration: 0.3, type: "spring", stiffness: 100 }}
+                transition={{ duration: 0.3, type: "spring", stiffness: 60 }}
               >
                 <div className="flex flex-col items-center gap-2 p-6">
                   {navLinks.map((item) => (
