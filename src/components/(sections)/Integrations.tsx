@@ -7,7 +7,7 @@ import { Span } from "../ui/Span";
 
 export function Integrations() {
   return (
-    <section className="py-24 flex justify-center overflow-hidden">
+    <section className="py-24 flex justify-center overflow-hidden" id="Integrations">
       <div className="container">
         <div className="grid lg:grid-cols-2 items-center lg:gap-16">
           <div>

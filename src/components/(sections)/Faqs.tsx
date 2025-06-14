@@ -27,7 +27,7 @@ const items = [
 ];
 export function Faqs() {
   return (
-    <section className="py-24 flex justify-center">
+    <section className="py-24 flex justify-center" id="FAQs">
       <div className="container">
         <div className="text-center">
           <Tag>FAQs</Tag>

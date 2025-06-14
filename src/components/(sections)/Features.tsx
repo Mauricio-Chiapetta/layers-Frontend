@@ -24,7 +24,7 @@ export function Features() {
     "Smart Guides",
   ];
   return (
-    <section className="py-24 flex justify-center">
+    <section className="py-24 flex justify-center" id="Features">
       <div className="container">
         <div className="flex justify-center">
           <Tag>Features</Tag>
