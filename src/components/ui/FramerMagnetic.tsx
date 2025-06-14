@@ -3,14 +3,15 @@ import { motion } from "motion/react";
 import { useRef, useState } from "react";
 
 type magneticTypes = {
-  children:React.ReactNode
+  children:React.ReactNode,
+  
 }
 
 export function FramerMagnetic({children}:magneticTypes) {
   const ref = useRef<HTMLDivElement>(null);
   const [position, setPosition] = useState({ x: 0, y: 0 });
 
-  const mouseMove = (e: any) => {
+  const mouseMove = (e:any) => {
     const { clientX, clientY } = e;
     if (!ref.current) return;
 
@@ -20,7 +21,7 @@ export function FramerMagnetic({children}:magneticTypes) {
     setPosition({ x, y });
   };
 
-  const mouseLeave = (e: any) => {
+  const mouseLeave = () => {
     setPosition({ x: 0, y: 0 });
   };
 

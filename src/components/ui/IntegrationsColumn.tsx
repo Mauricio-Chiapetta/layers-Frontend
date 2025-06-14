@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import { ComponentProps, Fragment } from "react";
+import {Fragment } from "react";
 import figmaIcon from "@/assets/images/figma-logo.svg";
 import notionIcon from "@/assets/images/notion-logo.svg";
 import slackIcon from "@/assets/images/slack-logo.svg";

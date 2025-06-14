@@ -44,7 +44,7 @@ export function Faqs() {
         >
           Questions? We&apos;ve
           <br /> got{" "}
-          <Span>answers</Span>
+          <Span className="bg-gradient-to-b">answers</Span>
         </motion.h2>
         {/* faqs */}
         <div className="mt-12 flex flex-col gap-6">

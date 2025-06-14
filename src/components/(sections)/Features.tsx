@@ -41,7 +41,7 @@ export function Features() {
           className="text-6xl text-center font-medium mt-6"
         >
           Where power meets <br />
-          <Span>simplicity</Span>
+          <Span className="bg-gradient-to-b">simplicity</Span>
         </motion.h2>
         {/* features */}
         <div className="mt-12 grid lg:grid-cols-3 gap-8 grid-cols-1">
