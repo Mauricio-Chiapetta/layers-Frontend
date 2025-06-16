@@ -46,7 +46,7 @@ export function Faqs() {
           <br /> got{" "}
           <Span className="bg-gradient-to-b">answers</Span>
         </motion.h2>
-        {/* faqs */}
+        {/* faqs */}  
         <div className="mt-12 flex flex-col gap-6">
           {items.map((item) => (
             <motion.div
